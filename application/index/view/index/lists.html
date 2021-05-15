@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+index ------index ------lists
+{$names}
+
+
+
+<ul>
+    {volist name="student" id="item"}
+    <li>{$item.uname}----{$item.upassword}</li>
+    {/volist}
+</ul>
+<volist name="student" id="item" >
+    {$item.uname}
+
+</volist>
+<volist name="student" id="item" >
+    {$item.uname}
+
+</volist>
+</body>
+</html>
