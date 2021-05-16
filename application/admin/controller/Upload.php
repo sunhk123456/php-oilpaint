@@ -12,11 +12,11 @@ class Upload
 
         if($file){
 //            $info = $file->move(ROOT_PATH . 'public' . DS . 'uploads');
-            $info = $file->validate(['size'=>500*1024,'ext'=>'jpg,png,jpeg,webp'])->move(ROOT_PATH . 'public' . DS . 'uploads');
+            $info = $file->validate(['size'=>500000000*1024,'ext'=>'jpg,png,jpeg,webp'])->move(ROOT_PATH . 'public' . DS . 'uploads');
 
             if($info){
                 $img=date('Ymd'). "/".$info->getFilename();
-                $imgURL="/think/public/uploads/".$img;
+                $imgURL="/oilPaint/public/uploads/".$img;
                 return json([
                     'code'=>200,
                     'imgURL'=>$imgURL
