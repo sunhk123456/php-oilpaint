@@ -10,6 +10,7 @@
 // +----------------------------------------------------------------------
 use think\Route;
 Route::resource('api/stayhome','admin/Stayhome');
+Route::resource('api2/detail','admin/detail');
 //前台
 Route::resource('api/index','index/Index2');
 Route::resource('api/detail','index/Detail');

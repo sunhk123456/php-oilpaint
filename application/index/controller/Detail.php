@@ -65,7 +65,7 @@ class Detail extends Controller
         $cms= Db::table('cms')->where('did',$id)->select();
         $desc= Db::table('desc')->where('did',$id)->select();
         $detailNavTab= Db::table('detailnavtab')->where('did',$id)->select();
-        $userCommons= Db::table('usercommons')->where('did',$id)->select();
+        $userCommons= Db::table('usercommons')->where('did',1)->select();
         $result['colors']=$colors;
         $result['imgs']=$imgs;
         $result['comments']=$comments;
